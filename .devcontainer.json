@@ -2,6 +2,9 @@
   "name": "spa-with-authentication-function-frontend",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "frontend",
+	"runServices": [
+		"frontend"
+	],
 	"workspaceFolder": "/frontend",
 	"features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -11,6 +14,8 @@
 		"vscode": {
 			"extensions": [
 				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"oderwat.indent-rainbow",
 				"vue.volar",
 				"vue.vscode-typescript-vue-plugin"
 			]
