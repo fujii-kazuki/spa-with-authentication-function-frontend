@@ -17,7 +17,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"oderwat.indent-rainbow",
 				"vue.volar",
-				"vue.vscode-typescript-vue-plugin"
+				"vue.vscode-typescript-vue-plugin",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	},
