@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
 import { reactive } from 'vue'
 import { login } from '@/api/auth'
 
@@ -29,8 +28,6 @@ const handleLogin = async () => {
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
-
   <form @submit.prevent="handleLogin">
     <div>
       <label for="email">Email</label>
