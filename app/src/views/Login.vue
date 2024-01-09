@@ -28,17 +28,29 @@ const handleLogin = async () => {
 </script>
 
 <template>
-  <form @submit.prevent="handleLogin">
-    <div>
-      <label for="email">Email</label>
-      <input v-model="formData.email" type="text" name="email" id="email" autocomplete="email" placeholder="Email">
-    </div>
-  
-    <div>
-      <label for="password">Password</label>
-      <input v-model="formData.password" type="password" name="password" id="password" autocomplete="current-password" placeholder="Password">
-    </div>
-  
-    <button type="submit">Sign In</button>
-  </form>
+  <div class="container max-w-[600px]">
+    <h1>Login</h1>
+
+    <form @submit.prevent="handleLogin">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
+        <div class="sm:col-span-6">
+          <label for="email">Email</label>
+          <div class="mt-2">
+            <input v-model="formData.email" type="text" name="email" id="email" autocomplete="email" placeholder="Email">
+          </div>
+        </div>
+        
+        <div class="sm:col-span-6">
+          <label for="password">Password</label>
+          <div class="mt-2">
+            <input v-model="formData.password" type="password" name="password" id="password" autocomplete="current-password" placeholder="Password">
+          </div>
+        </div>
+      </div>
+    
+      <div class="flex justify-center mt-10">
+        <button type="submit" class="btn bg-indigo-500 hover:bg-indigo-600">Sign In</button>
+      </div>
+    </form>
+  </div>
 </template>

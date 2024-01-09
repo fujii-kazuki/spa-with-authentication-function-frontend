@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 { @apply text-4xl mt-8 mb-4; }
+  h2 { @apply text-3xl mt-8 mb-4; }
+  h3 { @apply text-2xl mt-8 mb-4; }
+  h4 { @apply text-xl mt-8 mb-4; }
+  h5 { @apply text-lg mt-8 mb-4; }
+
+  label { @apply block leading-6 text-gray-900; }
+
+  input[type="text"],
+  input[type="password"] {
+    @apply block w-full rounded-md border-0 px-2.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-black text-gray-100 w-[250px] py-2.5 rounded-tr-xl rounded-br-3xl rounded-bl-xl rounded-tl-3xl tracking-wide
+    font-semibold shadow-lg transition-all select-none;
+  }
+}
